@@ -14,9 +14,6 @@ public class Sounds : MonoBehaviour
         instance = this;
     }
 
-    void Start() {
-        _audio.clip = _botonSource;
-    }
 
     public void b_playSound(){
         _audio.Play();
