@@ -6,8 +6,6 @@ public class Sounds : MonoBehaviour
 {
     public static Sounds instance;
 
-    public AudioClip _botonSource;
-
     public AudioSource _audio;
 
     void Awake() {
