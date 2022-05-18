@@ -1710,7 +1710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984847445037846360, guid: de2f5a8faf8565741a54510d7d11d655, type: 3}
       propertyPath: m_text
-      value: SPECIAL
+      value: boost
       objectReference: {fileID: 0}
     - target: {fileID: 6984847445037846360, guid: de2f5a8faf8565741a54510d7d11d655, type: 3}
       propertyPath: m_fontSize
@@ -5539,7 +5539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6984847445037846360, guid: de2f5a8faf8565741a54510d7d11d655, type: 3}
       propertyPath: m_text
-      value: SPECIAL
+      value: BOOST
       objectReference: {fileID: 0}
     - target: {fileID: 6984847445037846360, guid: de2f5a8faf8565741a54510d7d11d655, type: 3}
       propertyPath: m_fontSize

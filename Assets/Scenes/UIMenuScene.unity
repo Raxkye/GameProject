@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7964893477218818149, guid: dda7ac8aca0a09b45ad6c0e9d4645de5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: CombatScene
+      objectReference: {fileID: 0}
     - target: {fileID: 7964893477218818170, guid: dda7ac8aca0a09b45ad6c0e9d4645de5, type: 3}
       propertyPath: _audio
       value: 
