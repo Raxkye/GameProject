@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Player1
   - Player2
+  - HitBoxP1
+  - HitBoxP2
   layers:
   - Default
   - TransparentFX
