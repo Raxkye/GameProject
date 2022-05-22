@@ -158,7 +158,7 @@ public class Player2Script : MonoBehaviour
         Debug.Log(collider.tag);
         if(collider.gameObject.CompareTag("Player1") && isAtacking)
         {
-            if(currentMana>0 && boostAttack){
+            if(currentMana>40 && boostAttack){
                 TakeDamage(damage+5);
                 currentMana -= 40;
 		        manaBar.SetValue(currentMana);
@@ -185,7 +185,7 @@ public class Player2Script : MonoBehaviour
         }
         if(collider.gameObject.CompareTag("Player2") && isAtacking)
         {
-            if(currentMana>0 && boostAttack){
+            if(currentMana>40 && boostAttack){
                 TakeDamage(damage+5);
                 currentMana -= 40;
 		        manaBar.SetValue(currentMana);
