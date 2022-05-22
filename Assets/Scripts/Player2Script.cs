@@ -21,6 +21,10 @@ public class Player2Script : MonoBehaviour
     public AudioSource audio_S;
     public AudioClip[] sound;
 
+    //health and mana bars
+    private int maxHealth = 100;
+	private int currentHealth;
+	public HealthManaBarScripts healthBar;
 
     //movements keys
     public KeyCode hit;
@@ -35,6 +39,11 @@ public class Player2Script : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
         audio_S = GetComponent<AudioSource>();   
+
+        //mana and health
+        currentHealth = maxHealth;
+        healthBar.SetMaxValue(maxHealth);
+
     }
 
     // Update is called once per frame
@@ -55,10 +64,12 @@ public class Player2Script : MonoBehaviour
                 Flip_();
             }
         }
+
         Combo_();
+
         Jump();
-        Debug.Log(isAtacking);
-       
+
+    
     }
 
     void Jump()
@@ -67,6 +78,8 @@ public class Player2Script : MonoBehaviour
         {
             rigidbody2d.AddForce(new Vector2(0f, jumpPower), ForceMode2D.Impulse);
             isGrounded = false;
+
+            TakeDamage(10);
         }
     }
 
@@ -107,5 +120,14 @@ public class Player2Script : MonoBehaviour
         facingRight = !facingRight;
         transform.Rotate(0,180,0);
     }
+
+    void TakeDamage(int damage)
+	{
+		currentHealth -= damage;
+		healthBar.SetMaxValue(currentHealth);
+	}
+
+
+
 
 }
