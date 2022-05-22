@@ -17,7 +17,7 @@ public class HealthManaBarScripts : MonoBehaviour
 		fill.color = gradient.Evaluate(1f);
 	}
 
-    public void SetHealth(int value)
+    public void SetValue(int value)
 	{
 		slider.value = value;
 
