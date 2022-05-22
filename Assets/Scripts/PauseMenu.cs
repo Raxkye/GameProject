@@ -55,4 +55,10 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("CombatScene");
+    }
+
 }

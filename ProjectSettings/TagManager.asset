@@ -4,9 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Player1
-  - Player2
   - Hit
+  - Player1
+  - HitBoxP1
+  - Player2
+  - HitBoxP2
   layers:
   - Default
   - TransparentFX

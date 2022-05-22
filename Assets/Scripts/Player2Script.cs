@@ -13,7 +13,7 @@ public class Player2Script : MonoBehaviour
     [Header("Bools")]
     [SerializeField] bool isGrounded = false;
 
-    //animatorThings
+    //animator and sounds Things
     bool facingRight = true;
     bool isAtacking;
     Animator myAnim;
@@ -37,6 +37,10 @@ public class Player2Script : MonoBehaviour
     public KeyCode right;
     public KeyCode boost;
 
+    //Gameover canvas
+
+    public GameObject gameOver;
+
     //attack
     int damage = 10;
     bool boostAttack;
@@ -45,8 +49,7 @@ public class Player2Script : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        myAnim = GetComponent<Animator>();
-        audio_S = GetComponent<AudioSource>();   
+        myAnim = GetComponent<Animator>();  
 
         //mana and health
         currentHealth = maxHealth;
@@ -157,12 +160,26 @@ public class Player2Script : MonoBehaviour
         {
             if(currentMana>0 && boostAttack){
                 TakeDamage(damage+5);
-                currentMana -= 10;
+                currentMana -= 40;
 		        manaBar.SetValue(currentMana);
+                boostAttack = false;
+                audio_S.clip = sound[1];
+                audio_S.Play(); 
+
             }else{
                 TakeDamage(damage);
-                currentMana += 10;
+                currentMana += 5;
 		        manaBar.SetValue(currentMana);
+                audio_S.clip = sound[0];
+                audio_S.Play(); 
+            }
+            
+            if(currentHealth <= 0) 
+            {
+                Destroy(collider.gameObject);
+                audio_S.clip = sound[2];
+                audio_S.Play(); 
+                gameOver.SetActive(true);
             }
             
         }
@@ -170,13 +187,25 @@ public class Player2Script : MonoBehaviour
         {
             if(currentMana>0 && boostAttack){
                 TakeDamage(damage+5);
-                currentMana -= 30;
+                currentMana -= 40;
 		        manaBar.SetValue(currentMana);
                 boostAttack = false;
+                audio_S.clip = sound[1];
+                audio_S.Play();               
             }else{
                 TakeDamage(damage);
-                currentMana += 10;
+                currentMana += 5;
 		        manaBar.SetValue(currentMana);
+                audio_S.clip = sound[0];
+                audio_S.Play(); 
+            }
+
+            if(currentHealth <= 0) 
+            {
+                Destroy(collider.gameObject);
+                audio_S.clip = sound[2];
+                audio_S.Play(); 
+                gameOver.SetActive(true);
             }
         }
     }
