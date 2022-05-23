@@ -388,8 +388,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3, y: -191}
-  m_SizeDelta: {x: -121.16, y: 84.11}
+  m_AnchoredPosition: {x: 9, y: -225}
+  m_SizeDelta: {x: -57.58, y: 84.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1017614818
 MonoBehaviour:
@@ -411,10 +411,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CHEN  -  CONTRIBUY\xD3 AL 99% DEL PROYECTO\n\nESPECIAL GRACIAS A MI MADRE
+  m_text: "CHEN  -  CONTRIBUY\xD3 AL 99% DEL PROYECTO\n\nESPECIAL GRACIAS A MIS PADRES
     POR PAGAR LA LUZ\n\nADRIAN MART\xCDNEZ MATOS\nCREACI\xD3N DEL PERSONAJE DE JAKE\n\nROBERTO
-    Y\xC1\xD1EZ MAS, CRHISTOBAL HIDALGO GOM\xC9Z\nAPOYO MORAL Y FALTA DLCS\n\nELIANNE
-    CHARRO BRICE\xD1O\nAPOYO MORAL\n\nCARLA LUPI\xD3N BEZARES\nDISE\xD1O DE FONDOS\n\n\n\n"
+    Y\xC1\xD1EZ MAS, CRHISTOBAL HIDALGO GOM\xC9Z\nCRIT\xCDCOS DEL JUEGO\n\nELIANNE
+    CHARRO BRICE\xD1O\nAPOYO MORAL\n\nCARLA LUPI\xD3N BEZARES\nDISE\xD1O DE FONDOS\n\nEVA
+    DE ATONIO\nSI\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -423,8 +424,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285756275
-  m_fontColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    rgba: 4288980132
+  m_fontColor: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -441,8 +442,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -477,7 +478,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 231.77643}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
